@@ -158,5 +158,21 @@ h3 {
     color:white;
 }
 
+.showcase-photo {
+    list-style: none;
+    width: 100%;
+}
 
+.showcase-photo li {
+    display: inline-block;
+    width: 25%;
+}
 
+.showcase-photo li figure {
+   margin: 0; 
+   width: 100%;
+}
+
+.showcase-photo li figure img {
+   width: 100%;
+}
