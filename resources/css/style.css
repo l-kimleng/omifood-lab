@@ -164,15 +164,27 @@ h3 {
 }
 
 .showcase-photo li {
-    display: inline-block;
+    display: block;
     width: 25%;
+    float: left;
 }
 
-.showcase-photo li figure {
-   margin: 0; 
+.photo-box { 
    width: 100%;
+   margin: 0;
+   overflow: hidden;
+   background-color: black;
 }
 
-.showcase-photo li figure img {
+.photo-box img {
    width: 100%;
+   transform: scale(1.5);
+   opacity: .5;
+   transition: transform .5s, opacity .5s;
+}
+
+.photo-box img:hover {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
 }
