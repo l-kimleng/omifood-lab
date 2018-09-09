@@ -1,3 +1,4 @@
+/* ======GENERAL========= */
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +18,88 @@ html, body {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1 {
+    font-size: 240%;
+    font-weight: 300;
+    color: white;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e67e22;
+    margin: 20px auto 0 auto;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+section {
+    padding-top: 60px;    
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* ======COMPONENTS========= */
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #e67e22;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 30px;
+    transition: background-color .5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    color: white;
+    background-color: #e67e22;
+}
+
+.btn-outline:link,
+.btn-outline:visited {    
+    color: #e67e22;
+    background-color: transparent;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: #e67e22;
+    color:white;
+}
+
+/* ======HEADER========= */
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/hero.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 nav img {
@@ -65,46 +143,11 @@ nav img {
     transform: translate(-50%, -50%);
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-}
+/* ======SECTION FEATURE========= */
 
-h1 {
-    font-size: 240%;
-    font-weight: 300;
-    color: white;
-}
-
-h2 {
-    font-size: 150%;
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 100%;
-    font-weight: 400;
-}
-
-.section-features {
-    padding: 60px 0;
-}
-
-.feature-header {
-    text-align: center;  
+.feature-header {      
     width: 700px;  
-    margin-bottom: 60px;
-}
-
-.section-features h2::after {
-    content: " ";
-    display: block;
-    width: 100px;
-    height: 2px;
-    background-color: #e67e22;
-    margin: 20px auto 0 auto;
+    margin-bottom: 30px;
 }
 
 .feature-content h3 {
@@ -129,34 +172,7 @@ h3 {
     color: #e67e22;
 }
 
-.btn:link,
-.btn:visited {
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid #e67e22;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin-right: 30px;
-    transition: background-color .5s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-    color: white;
-    background-color: #e67e22;
-}
-
-.btn-outline:link,
-.btn-outline:visited {    
-    color: #e67e22;
-    background-color: transparent;
-}
-
-.btn-outline:hover,
-.btn-outline:active {
-    background-color: #e67e22;
-    color:white;
-}
+/* ======SECTION FOOD SHOWCASE========= */
 
 .showcase-photo {
     list-style: none;
@@ -187,4 +203,62 @@ h3 {
     transform: scale(1);
     opacity: 1;
     cursor: pointer;
+}
+
+/* ======SECTION HOW-IT-WORKS========= */
+
+.section-works {
+    background-color: #f3f3f3;
+}
+
+.section-works-left {
+    text-align: right;
+    padding-right: 60px;
+    margin-top: 30px;
+}
+
+.section-works-left img {
+    width: 50%;
+    height: auto;
+    text-align: right;
+}
+
+.step {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.step:first-child {
+    margin-top: 60px;
+}
+
+.step:last-of-type {
+    margin-bottom: 90px;
+}
+
+.step div {
+    color: #e67e22;
+    font-size: 150%;
+    font-weight: 300;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    padding-top: 4px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e67e22;
+}
+
+.step p {
+    position: absolute;
+    left: 80px;
+    top: -2px;
+    font-size: 110%;
+    font-weight: 300;
+}
+
+.btn-app img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
 }
