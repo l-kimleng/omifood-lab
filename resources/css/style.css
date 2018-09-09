@@ -49,10 +49,11 @@ h2::after {
 h3 {
     font-size: 100%;
     font-weight: 400;
+    margin: 15px 0;
 }
 
 section {
-    padding-top: 60px;    
+    padding: 60px 0;    
 }
 
 .clearfix::after {
@@ -90,6 +91,15 @@ section {
 .btn-outline:active {
     background-color: #e67e22;
     color:white;
+}
+
+.icon-big {
+    color: #e67e22;
+}
+
+.icon-small .fa-li {
+    color: #e67e22;
+    text-align: left;
 }
 
 /* ======HEADER========= */
@@ -150,29 +160,26 @@ nav img {
     margin-bottom: 30px;
 }
 
-.feature-content h3 {
-    margin: 15px 0;
-}
-
 .box {
     padding-right: 30px;
 }
 
 .feature-header p {
     text-align: left;
+    line-height: 160%;
 }
 
 .section-features p {
     font-size: 90%;
     font-weight: 300;
-}
-
-.section-features i {
-    font-size: 250%;
-    color: #e67e22;
+    line-height: 150%;
 }
 
 /* ======SECTION FOOD SHOWCASE========= */
+
+.section-meals {
+    padding: 0;
+}
 
 .showcase-photo {
     list-style: none;
@@ -261,4 +268,35 @@ nav img {
     width: auto;
     height: 50px;
     margin-right: 20px;
+}
+
+/* ======SECTION CITIES========= */
+
+.cities-photo {
+    width: 100%;
+    height: auto;
+}
+
+.icon-small i {
+    padding-top: 7px;
+}
+
+.icon-small li {
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.social-linker:link,
+.social-linker:visited {
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 3px;
+    transition: .5s border-bottom, .5s color;
+}
+
+.social-linker:hover,
+.social-linker:active {
+    color: #414141;
+    border-bottom: 1px solid transparent;
 }
