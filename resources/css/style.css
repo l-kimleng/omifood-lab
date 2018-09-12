@@ -77,7 +77,8 @@ section {
 /* ======COMPONENTS========= */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     text-decoration: none;
     display: inline-block;
     border: 1px solid #e67e22;
@@ -88,9 +89,18 @@ section {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     color: white;
     background-color: #e67e22;
+    transition: background-color .5s;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover {
+    color: white;
+    background-color: #f79743;
 }
 
 .btn-outline:link,
@@ -105,11 +115,7 @@ section {
     color:white;
 }
 
-.icon-big {
-    color: #e67e22;
-}
-
-.icon-small .fa-li {
+.fa, .fa-li {
     color: #e67e22;
     text-align: left;
 }
@@ -289,13 +295,15 @@ nav img {
     height: auto;
 }
 
-.icon-small i {
-    padding-top: 7px;
+.cities-icon i {
+    margin-top: 18px;
 }
 
-.icon-small li {
+.cities-icon li {
     line-height: 40px;
     font-weight: 300;
+    padding-left: 3px;
+    padding-top: 10px;
 }
 
 .social-linker:link,
@@ -360,4 +368,81 @@ cite img {
     border-radius: 50%;
     vertical-align: middle;
     margin-left: 10px;
+}
+
+/* ======SECTION SIGN UP========= */
+
+.sign-up {
+    background-color: #f3f3f3;
+}
+
+.price-box {
+    background-color: #fff;   
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #ebebeb;
+    border-top: 2px solid #eeeeee;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.price-header {
+    padding: 10px 20px 20px 20px;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.price-header p:first-of-type {
+    color: #e67e22;
+    font-size: 250%;
+    font-weight: 100;
+}
+.price-header span {
+    font-size: 30%;
+    font-weight: 200;
+}
+
+.price-header p:last-of-type {
+    margin-top: 20px;
+    font-size: 80%;
+    font-weight: 300;
+}
+
+.price-content {
+    display: inline-block;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.price-content li {
+    list-style: none;
+    line-height: 150%;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.price-content li i {
+    margin: 4px 0;
+}
+.price-footer {
+    padding: 20px;
+    border-top: 1px solid rgb(241, 241, 241); 
+    text-align: center;   
+}
+
+/* ======SECTION FORMS========= */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+input[type=text],
+input[type=email], 
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
 }
