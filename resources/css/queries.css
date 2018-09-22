@@ -1,0 +1,112 @@
+/* Big device from 1140px */
+@media only screen and (max-width: 1140px) {
+
+    nav img {
+        margin-left: 30px;
+    }
+
+    .hero-box {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+    }
+
+    h3 {
+        font-size: 80%;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+
+    .feature-header p {
+        text-align: left;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+
+    .section-features p {
+        font-size: 75%;
+        font-weight: 300;
+        line-height: 150%;
+    }
+
+    .icon-sizing {
+        font-size: 15px;
+    }
+
+    .row {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .step {
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .step:first-child {
+        margin-top: 50px;
+    }
+    
+    .step:last-of-type {
+        margin-bottom: 70px;
+    }
+
+    .step p {
+        position: absolute;
+        left: 80px;
+        top: -2px;
+        font-size: 90%;
+        font-weight: 300;
+    }
+
+    .cities-icon li {
+        line-height: 40px;
+        font-weight: 300;
+        padding-left: 3px;
+        padding-top: 10px;
+        font-size: 80%;
+    }
+
+    blockquote {
+        font-style: italic;
+        font-size: 85%;
+        font-weight: 300;
+        line-height: 150%;
+        text-align: justify;
+        position: relative;
+    }
+
+    .price-content li {
+        list-style: none;
+        line-height: 150%;
+        font-weight: 300;
+        font-size: 90%;
+        margin-top: 15px;
+    }
+
+    .price-footer {
+        font-size: 80%;
+        text-align: center;
+    }
+
+    .contact-form {
+        font-size: 75%;
+    }
+}
+
+/* Device from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+/* Small device from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Small device from 0px to 480px */
+@media only screen and (max-width: 480px) {
+
+}
